@@ -1,4 +1,4 @@
-package rules
+package sbercode
 
 default allow = []
 default deny = []
