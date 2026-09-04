@@ -1,7 +1,9 @@
 # Podman: починить health-сервис
 
-Черновик упражнения SkillTrack (admin).
+SkillTrack / TaskTrack (admin). Окружение: python-3.14.
 
-Окружение: python-3.14. Импорт: scenario.json (рядом intro.md, steps/, assets/, rules/).
+В упражнении в Files кладётся initTask.sh. Он клонирует этот репозиторий в ~/admin_podman_misconfig.
 
-Цель: workshop-health:local, контейнер workshop-health, publish 8080:8080, curl /health → ok.
+Цель: workshop-health:local, контейнер workshop-health, 8080:8080, curl /health → ok.
+
+Импорт: scenario.json (asset: initTask.sh).

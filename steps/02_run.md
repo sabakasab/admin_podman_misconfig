@@ -1,6 +1,6 @@
 # Шаг 2. Запуск
 
-В files/ есть compose.yml.draft и run.sh.draft — доведите запуск до рабочего состояния.
+В ~/admin_podman_misconfig/files/ есть compose.yml.draft и run.sh.draft — доведите запуск до рабочего состояния.
 
 | Параметр | Значение |
 |----------|----------|

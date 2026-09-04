@@ -1,6 +1,6 @@
 {
   "title": "Podman: починить health-сервис",
-  "description": "Админ, средняя сложность. Образ python-3.14. Поднять workshop-health так, чтобы curl localhost:8080/health вернул ok.",
+  "description": "Админ, средняя сложность. Образ python-3.14. initTask.sh клонирует материалы с GitHub; поднять workshop-health и curl /health → ok.",
   "difficulty": "medium",
   "time": "20-40 minutes",
   "details": {
@@ -9,7 +9,7 @@
     },
     "steps": [
       {
-        "title": "Приложение и образ",
+        "title": "Инициализация и образ",
         "text": "steps/01_build.md",
         "checkPolicyName": "check_image"
       },
@@ -27,20 +27,8 @@
     "assets": {
       "host01": [
         {
-          "file": "app/server.py",
-          "target": "~/files/app"
-        },
-        {
-          "file": "Containerfile.draft",
-          "target": "~/files"
-        },
-        {
-          "file": "compose.yml.draft",
-          "target": "~/files"
-        },
-        {
-          "file": "run.sh.draft",
-          "target": "~/files"
+          "file": "initTask.sh",
+          "target": "~/"
         }
       ]
     }
