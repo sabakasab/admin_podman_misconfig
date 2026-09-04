@@ -1,0 +1,54 @@
+{
+  "title": "Podman: починить health-сервис",
+  "description": "Админ, средняя сложность. Образ python-3.14. Поднять workshop-health так, чтобы curl localhost:8080/health вернул ok.",
+  "difficulty": "medium",
+  "time": "20-40 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Приложение и образ",
+        "text": "steps/01_build.md",
+        "checkPolicyName": "check_image"
+      },
+      {
+        "title": "Запуск",
+        "text": "steps/02_run.md",
+        "checkPolicyName": "check_container"
+      },
+      {
+        "title": "Проверка HTTP",
+        "text": "steps/03_http.md",
+        "checkPolicyName": "check_http"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "app/server.py",
+          "target": "~/files/app"
+        },
+        {
+          "file": "Containerfile.draft",
+          "target": "~/files"
+        },
+        {
+          "file": "compose.yml.draft",
+          "target": "~/files"
+        },
+        {
+          "file": "run.sh.draft",
+          "target": "~/files"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "python-3.14"
+  }
+}

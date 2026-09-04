@@ -1,0 +1,8 @@
+services:
+  health:
+    image: workshop-health:local
+    container_name: workshop-app
+    ports:
+      - "8080:80"
+    network_mode: "none"
+    command: ["python3", "/app/server.py"]
