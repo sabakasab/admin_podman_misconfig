@@ -1,0 +1,3 @@
+*.solution*
+**/README.author.md
+.DS_Store
